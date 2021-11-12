@@ -31,23 +31,22 @@ initAnimacaoScroll()
 /*Open Modal Tenis*/
 
 function modalTenisOpen() {
-	const openmodalTenis = document.querySelector('.tenis-modal')
+	const openmodalTenis = document.querySelectorAll('.tenis-modal')
 	const modalTenis = document.querySelector('.modal-tenis')
 	const btnClose = document.querySelector('.btnClose')
 
-	function openModalTenis() {
-		modalTenis.classList.add('show')
-		modalTenis.classList.add('fade-in-fwd')
-		modalTenis.classList.remove('fade-out-bck')
-	}
+	openmodalTenis.forEach(openmodalTenis => {
+		openmodalTenis.addEventListener('click', () => {
+			modalTenis.classList.add('show')
+			modalTenis.classList.add('fade-in-fwd')
+		})
+	})
 
 	function closeModalTenis() {
 		modalTenis.classList.remove('show')
 		modalTenis.classList.remove('fade-in-fwd')
-		modalTenis.classList.add('fade-out-bck')
 	}
 
-	openmodalTenis.addEventListener('click', openModalTenis)
 	btnClose.addEventListener('click', closeModalTenis)
 }
 
