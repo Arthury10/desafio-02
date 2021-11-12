@@ -1,0 +1,9 @@
+.footer-bg {
+	margin-top: 6.25rem;
+	background: var(--color-primary);
+}
+
+.footer {
+	padding: 12px 0;
+	text-align: center;
+}

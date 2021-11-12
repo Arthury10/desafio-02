@@ -1,0 +1,20 @@
+/*global*/
+@import url('global/global.css');
+
+/*color*/
+@import url('utility/color.css');
+
+/*typografy*/
+@import url('utility/typografy.css');
+
+/*header*/
+@import url('global/header.css');
+
+/*home*/
+@import url('home/home.css');
+
+/*footer*/
+@import url('global/footer.css');
+
+/*animista*/
+@import url('utility/animista.css');

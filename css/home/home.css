@@ -1,0 +1,123 @@
+.main-bg {
+	background: var(--color-quaternary);
+	margin-top: 9.37rem;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 3.65rem;
+}
+
+.title-main {
+	text-align: center;
+}
+
+.tenis-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	position: relative;
+}
+
+.tenis-item {
+	padding: 76px 25px;
+	background-color: var(--color-tertiary);
+	margin-left: 13px;
+	margin-right: 13px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.tenis-item img {
+	width: 250px;
+	height: 150px;
+}
+
+.desativo {
+	opacity: 0;
+}
+
+.ativo {
+	opacity: 1;
+}
+
+/*modal tenis*/
+
+.modal-tenis {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: auto;
+	height: auto;
+	padding: 50px 0;
+	background-color: var(--color-secondary);
+	border-radius: 5px;
+}
+
+.container-modal-tenis {
+	position: relative;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--color-quaternary);
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+.modal-img {
+	position: relative;
+}
+
+.modal-img img {
+	border: 2px solid var(--color-primary);
+	border-radius: 5px;
+	background-color: var(--color-primary);
+	min-width: 250px;
+	min-height: 150px;
+}
+
+.modal-img span {
+	background: var(--color-quaternary);
+	position: absolute;
+	top: 10px;
+	right: 0;
+	border-radius: 5px;
+	padding: 10px 10px;
+}
+
+.modal-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.btn-buy {
+	background-color: var(--color-primary);
+	color: var(--color-quaternary);
+	padding: 20px 30px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.btnClose {
+	position: absolute;
+	top: -40px;
+	right: -50px;
+	cursor: pointer;
+}
+
+.show {
+	display: flex;
+}
